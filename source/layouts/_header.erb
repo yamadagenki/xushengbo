@@ -1,7 +1,7 @@
 <header class="l-header">
   <div class="l-content">
-    <div class="l-header__title">
-      Xu Shengbo
-    </div>
+    <h1 class="l-header__title">
+      <%= current_article.nil? ? "Xu Shengbo" : current_article.title %>
+    </h1>
   </div>
 </header>
