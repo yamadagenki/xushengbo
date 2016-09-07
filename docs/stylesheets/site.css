@@ -4508,6 +4508,7 @@ a {
     .l-header__title {
       text-align: center;
       font-size: 60px;
+      margin-bottom: 20px;
       font-family: 'Pacifico', cursive; }
 
   footer {
