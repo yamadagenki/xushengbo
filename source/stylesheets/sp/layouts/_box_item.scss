@@ -1,0 +1,20 @@
+.l-box_items {
+  margin: 0 10px;
+  text-align: center;
+  &__item {
+    width: 300px;
+    height: 180px;
+    display: inline-block;
+    text-align: center;
+    margin: 5px 0;
+    &__image{
+      max-width: 281px;
+      max-height: 150px;
+      border: 1px solid rgba(0, 0, 0, .2);
+    }
+    &__title{
+      height: 30px;
+      margin-top: 5px;
+    }
+  }
+}

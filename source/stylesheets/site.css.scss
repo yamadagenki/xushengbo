@@ -1,0 +1,27 @@
+@import 'base/sanitize';
+@import 'base/base';
+@import 'vendor/hover/hover';
+
+@media screen and (min-width: 960px) {
+  @import 'pc/base/site_settings';
+  @import 'pc/base/base';
+  @import 'pc/layouts/header';
+  @import 'pc/layouts/footer';
+  @import 'pc/layouts/content';
+  @import 'pc/layouts/list';
+  @import 'pc/layouts/box_item';
+  @import 'pc/layouts/image_item';
+  @import 'pc/layouts/list_item';
+}
+
+@media screen and (max-width: 959px) {
+  @import 'sp/base/site_settings';
+  @import 'sp/base/base';
+  @import 'sp/layouts/header';
+  @import 'sp/layouts/footer';
+  @import 'sp/layouts/content';
+  @import 'sp/layouts/list';
+  @import 'sp/layouts/box_item';
+  @import 'sp/layouts/image_item';
+  @import 'sp/layouts/list_item';
+}

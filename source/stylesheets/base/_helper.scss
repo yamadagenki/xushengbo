@@ -1,0 +1,15 @@
+.f-left {
+  float: left;
+}
+.f-right {
+  float: right;
+}
+.clearfix:after {
+  content: " ";
+  display: block;
+  height: 0px;
+  clear: both;
+  visibility: hidden;
+  font-size: 0.1em;
+  line-height: 0;
+}

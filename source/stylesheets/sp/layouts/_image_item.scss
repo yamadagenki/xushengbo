@@ -1,0 +1,30 @@
+.l-image_items {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  &__item {
+    margin-top: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100%;
+    &:after {
+      content: " ";
+      display: block;
+      height: 0px;
+      clear: both;
+      visibility: hidden;
+      font-size: 0.1em;
+      line-height: 0;
+    }
+    &__image{
+      float: left;
+      width: 30%;
+      border: 1px solid rgba(0, 0, 0, .2);
+    }
+    &__title{
+      float: left;
+      width: 60%;
+      text-align: left;
+      margin-left: 5%;
+    }
+  }
+}
