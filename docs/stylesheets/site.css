@@ -489,6 +489,21 @@ a {
   text-decoration: none;
   color: black; }
 
+.f-left {
+  float: left; }
+
+.f-right {
+  float: right; }
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  height: 0px;
+  clear: both;
+  visibility: hidden;
+  font-size: 0.1em;
+  line-height: 0; }
+
 /*!
  * Hover.css (http://ianlunn.github.io/Hover/)
  * Version: 2.0.2
@@ -4512,7 +4527,7 @@ a {
       font-family: 'Pacifico', cursive; }
 
   footer {
-    height: 40px; }
+    margin: 40px 0; }
 
   .l-content {
     width: 960px;
@@ -4588,7 +4603,7 @@ a {
       font-family: 'Pacifico', cursive; }
 
   footer {
-    height: 40px; }
+    margin: 40px 0; }
 
   .l-content {
     padding: 0 10px; }
