@@ -24,7 +24,7 @@ activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
   # blog.prefix = "blog"
 
-  blog.permalink = "static_mypage/{year}/{month}/{day}.html"
+  blog.permalink = "xushengbo/{year}/{month}/{day}.html"
   # Matcher for blog source files
   blog.sources = "posts/{year}-{month}-{day}.html"
   # blog.taglink = "tags/{tag}.html"
@@ -66,11 +66,11 @@ configure :build do
   # Minify Javascript on build
   # activate :minify_javascript
 
-  set :css_dir, 'static_mypage/stylesheets'
-  set :js_dir, 'static_mypage/javascripts'
-  set :images_dir, 'static_mypage/images'
+  set :css_dir, 'xushengbo/stylesheets'
+  set :js_dir, 'xushengbo/javascripts'
+  set :images_dir, 'xushengbo/images'
 
-  set :base_url, 'static_mypage/'
+  set :base_url, 'xushengbo/'
 
 
   after_build do
