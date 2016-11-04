@@ -7,7 +7,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-    <title>Xu Shengbo<%= ' | ' + current_article.title unless current_article.nil? %></title>
+    <title>Xu Shengbo | <%= current_article.nil? ? '徐 聖博' : current_article.title  %></title>
     <meta name="description" content="徐聖博(@yamadagenki0607)の個人サイトです。プロダーツプレイヤー(ターゲットスポーツ所属)やってます。よろしくお願いします。">
     <meta name="keywords" content="徐聖博, yamadagenki0607, ダーツプロ, ターゲットスポーツ, 株式会社メドレー">
     <%= favicon_tag 'https://yamadagenki.github.io/xushengbo/images/favicon.png' %>
