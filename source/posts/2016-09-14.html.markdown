@@ -1,8 +1,0 @@
----
-title: 5億円
-date: 2016-09-14
-tags: example
----
-
-サンプルです。
-![写真](../posts/2016-09-14/sample.png)

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Blog Name</title>
+  <subtitle>Blog subtitle</subtitle>
+  <id>http://blog.url.com/</id>
+  <link href="http://blog.url.com/"/>
+  <link href="http://blog.url.com/feed.xml" rel="self"/>
+  <updated>2017-03-01T09:00:00+09:00</updated>
+  <author>
+    <name>Blog Author</name>
+  </author>
+  <entry>
+    <title>ブログ始めます + 本読みます</title>
+    <link rel="alternate" href="http://blog.url.com/posts/2017/03/01.html"/>
+    <id>http://blog.url.com/posts/2017/03/01.html</id>
+    <published>2017-03-01T09:00:00+09:00</published>
+    <updated>2017-03-01T23:01:40+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;h2 id="section"&gt;今日の本&lt;/h2&gt;
+&lt;p&gt;今日読んだ本はこちら、&lt;a href="http://amzn.to/2lbZhix" blank="_target"&gt;&lt;b&gt;たった1分で人生が変わる 片づけの習慣&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://amzn.to/2lbZhix" blank="_target"&gt;&lt;img src="/posts/201703/01.jpg" class="w200 mt20 mb20 m-c d-b" /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;自分は片付けが苦手なので、この本を読んで片付けの習慣ができるかなと期待している。&lt;/p&gt;
+
+&lt;h2 id="section-1"&gt;感想&lt;/h2&gt;
+
+&lt;p&gt;ダイエットのリバウンドと同じで、一気に片付けをやろうとするのでもっと汚くなるらしい。&lt;br /&gt;
+それは確かに、いままでの経験でよくわかってるのでなるほどー、と思いました。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;とりあえず、毎日5-15分掃除しようと思いました。&lt;br /&gt;
+あとは、毎朝起きたらやるという習慣をつけようと思いました。&lt;/p&gt;
+</content>
+  </entry>
+</feed>
