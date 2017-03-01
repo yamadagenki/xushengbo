@@ -66,12 +66,11 @@ configure :build do
   # Minify Javascript on build
   # activate :minify_javascript
 
-  set :css_dir, 'xushengbo/stylesheets'
-  set :js_dir, 'xushengbo/javascripts'
-  set :images_dir, 'xushengbo/images'
+  set :css_dir, 'stylesheets'
+  set :js_dir, 'javascripts'
+  set :images_dir, 'images'
 
-  set :base_url, 'xushengbo/'
-
+  set :http_prefix, '/xushengbo'
 
   after_build do
     system 'rm -rf docs'

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="locale" content="ja_JP">
-    <meta name="url" content="https://yamadagenki.github.io/xushengbo/">
+    <meta name="url" content="<%= current_page.url %>">
     <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
@@ -11,9 +11,9 @@
     <meta name="description" content="徐聖博(@yamadagenki0607)の個人サイトです。プロダーツプレイヤー(ターゲットスポーツ所属)やってます。よろしくお願いします。">
     <meta name="keywords" content="徐聖博, yamadagenki0607, ダーツプロ, ターゲットスポーツ, 株式会社メドレー">
     <%= favicon_tag 'https://yamadagenki.github.io/xushengbo/images/favicon.png' %>
-    <meta property="og:image" content="https://yamadagenki.github.io/xushengbo/images/ogimage.png">
-    <meta property="og:url" content="https://yamadagenki.github.io/xushengbo/">
-    <meta property="og:site_name" content="徐  聖博 HomePage">
+    <meta property="og:image" content="https://yamadagenki.github.io/xushengbo/posts/main/<%= current_article.date.strftime('%Y-%m-%d.jpg')%>">
+    <meta property="og:url" content="<%= current_page.url %>">
+    <meta property="og:site_name" content="Xu Shengbo<%= ' | ' + current_article.title if current_article.present? %>">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@yamadagenki0607">
@@ -32,7 +32,7 @@
   </head>
   <body>
     <%= partial 'layouts/blog_header' %>
-    <img src="/posts/main/<%= current_article.date.strftime('%Y-%m-%d.jpg')%>" class="main-img">
+    <img src="/xushengbo/posts/main/<%= current_article.date.strftime('%Y-%m-%d.jpg')%>" class="main-img">
     <main>
       <%= yield %>
     </main>
