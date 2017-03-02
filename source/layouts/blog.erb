@@ -34,7 +34,7 @@
   </head>
   <body>
     <%= partial 'layouts/blog_header' %>
-    <img src="/xushengbo/posts/main/<%= current_article.date.strftime('%Y-%m-%d.jpg')%>" class="main-img">
+    <img src="/xushengbo/posts/main/<%= current_article.date.strftime('%Y-%m-%d.jpg')%>" class="main-img" alt="<%= current_article.title %>">
     <main>
       <%= yield %>
     </main>
