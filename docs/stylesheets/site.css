@@ -5282,6 +5282,10 @@ main {
       text-align: center;
       font-size: 40px;
       font-family: 'Pacifico', cursive; }
+    .l-header__blog_title {
+      text-align: center;
+      font-size: 40px;
+      font-family: 'Pacifico', cursive; }
 
   footer {
     margin: 40px 0; }
