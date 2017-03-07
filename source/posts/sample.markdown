@@ -2,7 +2,6 @@
 title: 孫正義さんも読んでいたらしい孫子の兵法
 date: 2017-03-08
 tags: 本,雑学
-published: false
 ---
 
 ## 今日の本
