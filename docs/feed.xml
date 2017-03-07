@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://blog.url.com/xushengbo/posts/2017/03/06.html"/>
     <id>http://blog.url.com/xushengbo/posts/2017/03/06.html</id>
     <published>2017-03-06T09:00:00+09:00</published>
-    <updated>2017-03-06T23:39:34+09:00</updated>
+    <updated>2017-03-07T09:26:00+09:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -32,14 +32,26 @@
 &lt;p&gt;以下が、その例。&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Don't repeat yourselfの原則&lt;/li&gt;
-  &lt;li&gt;繰り返さないような工夫をすること&lt;/li&gt;
-  &lt;li&gt;KISS(keep it simple stylish)の原則&lt;/li&gt;
-  &lt;li&gt;設計の単純性（簡潔性）は成功への鍵&lt;/li&gt;
-  &lt;li&gt;情報を発信する&lt;/li&gt;
-  &lt;li&gt;情報はギブアンドテイクなので、自分から発信することも大事&lt;/li&gt;
-  &lt;li&gt;スケジュールを入れるということはプログラマを書くことと同じ&lt;/li&gt;
-  &lt;li&gt;前日に予定を入れたり、割り込みを許さない&lt;/li&gt;
+  &lt;li&gt;Don't repeat yourselfの原則
+    &lt;ul&gt;
+      &lt;li&gt;繰り返さないような工夫をすること&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;KISS(keep it simple stylish)の原則
+    &lt;ul&gt;
+      &lt;li&gt;設計の単純性（簡潔性）は成功への鍵&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;情報を発信する
+    &lt;ul&gt;
+      &lt;li&gt;情報はギブアンドテイクなので、自分から発信することも大事&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;スケジュールを入れるということはプログラマを書くことと同じ
+    &lt;ul&gt;
+      &lt;li&gt;前日に予定を入れたり、割り込みを許さない&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;その他、プログラマーの仕事術が書かれていたけど、まさしく自分が意識してやってることだなと思いました。&lt;/p&gt;
