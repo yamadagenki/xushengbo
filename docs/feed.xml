@@ -5,10 +5,47 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2017-03-08T09:00:00+09:00</updated>
+  <updated>2017-03-09T09:00:00+09:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>ドラマ好きが役に立つ？</title>
+    <link rel="alternate" href="http://blog.url.com/xushengbo/posts/2017/03/09.html"/>
+    <id>http://blog.url.com/xushengbo/posts/2017/03/09.html</id>
+    <published>2017-03-09T09:00:00+09:00</published>
+    <updated>2017-03-10T00:02:27+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;h2 id="section"&gt;今日の本&lt;/h2&gt;
+&lt;p&gt;今日読んだ本はこちら、&lt;a href="http://amzn.to/2lG03ow" blank="_target"&gt;&lt;b&gt;ずるい考え方 ゼロから始めるラテラルシンキング入門&lt;/b&gt;&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://amzn.to/2lG03ow" blank="_target"&gt;&lt;img src="/xushengbo/posts/201703/09.jpg" class="w200 mt20 mb20 m-c d-b" alt="ずるい考え方 ゼロから始めるラテラルシンキング入門" /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;タイトルにやられて読んでみました。タイトル、ずるいです。&lt;/p&gt;
+
+&lt;h2 id="section-1"&gt;感想&lt;/h2&gt;
+
+&lt;p&gt;ラテラルシンキングは、既成概念にとらわれない考え方。&lt;/p&gt;
+
+&lt;p&gt;例えばオレンジを4人に分ける時、オレンジジュースにして分ける、と言った発想方法です。&lt;/p&gt;
+
+&lt;p&gt;これを見て、確かに、「ずるい！」と思ってしまいました。&lt;/p&gt;
+
+&lt;p&gt;また、以下のようなことが書かれていた&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;問の設定や前提条件を疑う&lt;/li&gt;
+  &lt;li&gt;異文化や異業種の人と意見交換する&lt;/li&gt;
+  &lt;li&gt;抽象化・具体化を用いる&lt;/li&gt;
+  &lt;li&gt;偶然の発見を見逃さない&lt;/li&gt;
+  &lt;li&gt;マイナスをプラスに変える&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;ちょっと、ズルく生きてみたいと思いました&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>ドラマ好きが役に立つ？</title>
     <link rel="alternate" href="http://blog.url.com/xushengbo/posts/2017/03/08.html"/>
@@ -221,41 +258,6 @@
 &lt;p&gt;特に、普段何気なく考えてることを体系化して書いてあると、なるほどなぁという感想になった。&lt;/p&gt;
 
 &lt;p&gt;「マーケティング」とは？みたいな事を思った人には是非読んでみた方がいい本だと思いました。&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>「男の色気」って作るものなんですね</title>
-    <link rel="alternate" href="http://blog.url.com/xushengbo/posts/2017/03/03.html"/>
-    <id>http://blog.url.com/xushengbo/posts/2017/03/03.html</id>
-    <published>2017-03-03T09:00:00+09:00</published>
-    <updated>2017-03-06T00:32:05+09:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;h2 id="section"&gt;今日の本&lt;/h2&gt;
-&lt;p&gt;今日読んだ本はこちら、&lt;a href="http://amzn.to/2m0pKP2" blank="_target"&gt;&lt;b&gt;「男の色気」のつくり方&lt;/b&gt;&lt;/a&gt;。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="http://amzn.to/2m0pKP2" blank="_target"&gt;&lt;img src="/xushengbo/posts/201703/03.jpg" class="w200 mt20 mb20 m-c d-b" alt="「男の色気」のつくり方" /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;色気ある男を目指したいなと思いこの本を読んでみました。&lt;/p&gt;
-
-&lt;h2 id="section-1"&gt;感想&lt;/h2&gt;
-
-&lt;p&gt;色気って難しいなと思った。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;色気男は、常に身の回りに美女を置いている&lt;/li&gt;
-  &lt;li&gt;色気男は、その場を楽しむ&lt;/li&gt;
-  &lt;li&gt;色気男は、執着しない&lt;/li&gt;
-  &lt;li&gt;色気男は、いい意味で軽い&lt;/li&gt;
-  &lt;li&gt;色気男は、服など雰囲気を出す&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;などなど、色気男についての話があった。&lt;/p&gt;
-
-&lt;p&gt;とりあえず、チャラい男なんだなと思った。&lt;/p&gt;
-
-&lt;p&gt;チャラ男、つらい。&lt;/p&gt;
 </content>
   </entry>
 </feed>
