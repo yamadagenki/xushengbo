@@ -5210,6 +5210,11 @@ main {
   footer {
     margin: 40px 0; }
 
+  .l-content {
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto; }
+
   .l-list {
     margin-bottom: 0; }
     .l-list__title {
