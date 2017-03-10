@@ -37,6 +37,19 @@
     <img src="/xushengbo/posts/main/<%= current_article.date.strftime('%Y-%m-%d.jpg')%>" class="main-img" alt="<%= current_article.title %>">
     <main>
       <%= yield %>
+
+<section class="l-content l-list mt30">
+  <h2 class="l-list__title">
+    Blogs
+  </h2>
+  <div class="l-list_items">
+    <ul>
+      <% page_articles.each_with_index do |article, i| %>
+        <li class="l-list_items__item"><%= link_to "#{article.title}(#{article.date.strftime('%Y/%m/%d')})", article, class: 'hvr-underline-reveal' %></li>
+      <% end %>
+    </ul>
+  </div>
+</section>
     </main>
     <%= partial 'layouts/footer' %>
   </body>
