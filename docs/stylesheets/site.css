@@ -5210,11 +5210,6 @@ main {
   footer {
     margin: 40px 0; }
 
-  .l-content {
-    width: 960px;
-    margin-right: auto;
-    margin-left: auto; }
-
   .l-list {
     margin-bottom: 0; }
     .l-list__title {
@@ -5291,14 +5286,13 @@ main {
     margin: 40px 0; }
 
   .l-content {
-    padding: 0 10px; }
+    padding: 0; }
 
   .l-list {
     margin-top: 20px;
     margin-bottom: 20px; }
     .l-list__title {
       text-align: left;
-      padding-left: 10px;
       margin-bottom: 0; }
 
   .l-box_items {
