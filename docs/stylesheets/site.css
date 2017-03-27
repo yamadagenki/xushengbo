@@ -5291,7 +5291,8 @@ main {
     margin: 40px 0; }
 
   .l-content {
-    padding: 0; }
+    padding: 0;
+    margin: 0 20px; }
 
   .l-list {
     margin-top: 20px;
@@ -5305,6 +5306,7 @@ main {
     text-align: center; }
     .l-box_items__item {
       width: 300px;
+      max-width: 100%;
       height: 210px;
       display: inline-block;
       text-align: center;
