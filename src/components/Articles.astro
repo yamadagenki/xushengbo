@@ -1,0 +1,94 @@
+---
+const articles = [
+  {
+    date: '2017/01/24',
+    title: 'ビジネスにも役立つ学術論文を読むメリットとは〜開発本部・TechLunch〜',
+    url: 'http://info.medley.jp/entry/2017/01/24/182028',
+  },
+  {
+    date: '2017/01/17',
+    title: '全ての働く人に知って欲しいプログラミング序論〜メドレー非エンジニア向け勉強会〜',
+    url: 'http://info.medley.jp/entry/2017/01/17/174921',
+  },
+  {
+    date: '2016/11/02',
+    title: '医師もGithubにコミット！メドレーの目指す「全員で行う高速開発体制」について〜非エンジニア向け勉強会(Git編)〜',
+    url: 'http://info.medley.jp/entries/2016/11/02',
+  },
+  {
+    date: '2016/09/03',
+    title: '会社でも役立つ！？ダーツをやることで得られる能力とは',
+    url: 'http://yamadagenki.hatenablog.com/entry/2016/09/03/114816',
+  },
+  {
+    date: '2016/08/26',
+    title: 'プロダクト品質向上のためのフルスタック開発〜メドレーにおける機能ベース開発について〜',
+    url: 'http://info.medley.jp/entries/2016/08/26',
+  },
+  {
+    date: '2016/08/04',
+    title: '現役ダーツプロの僕がメドレーに入社した7つの理由',
+    url: 'https://www.wantedly.com/companies/medley/post_articles/31064',
+  },
+];
+---
+<section class="articles" id="articles">
+  <div class="inner">
+    <span class="label">Articles</span>
+    <ul class="list">
+      {articles.map(a => (
+        <li class="item">
+          <time class="date">{a.date}</time>
+          <a href={a.url} target="_blank" rel="noopener" class="link">{a.title}</a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+<style>
+  .articles {
+    padding: 72px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .inner {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  .label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--accent-ink);
+    margin-bottom: 28px;
+  }
+  .list { list-style: none; }
+  .item {
+    display: flex;
+    align-items: baseline;
+    gap: 18px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--line);
+    transition: padding-left .18s;
+  }
+  .item:first-child { border-top: 1px solid var(--line); }
+  .item:hover { padding-left: 6px; }
+  .date {
+    flex-shrink: 0;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+  }
+  .link {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--ink-soft);
+    line-height: 1.5;
+    transition: color .15s;
+  }
+  .link:hover { color: var(--accent); }
+</style>

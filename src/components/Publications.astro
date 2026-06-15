@@ -1,0 +1,142 @@
+---
+const base = import.meta.env.BASE_URL;
+
+const pubs = [
+  {
+    img: 'aamas.png',
+    url: 'http://aamas2014.lip6.fr/proceedings/aamas/p1537.pdf',
+    title: 'Sample Efficiency Improvement on Neuroevolution via Estimation-Based Elimination Strategy',
+    venue: 'AAMAS 2014',
+    authors: 'Shengbo Xu, Yuki Inoue, Tetsunari Inamura, Hirotaka Moriguchi, Shinichi Honiden',
+    me: 'Shengbo Xu',
+  },
+  {
+    img: 'icimcs.png',
+    url: 'http://dl.acm.org/citation.cfm?id=2499823',
+    title: 'Automatic Image Description by Using Word-Level Features',
+    venue: 'ICIMCS 2013',
+    authors: 'Shingo Horiuchi, Hirotaka Moriguchi, Shengbo Xu, Shinichi Honiden',
+    me: 'Shengbo Xu',
+  },
+  {
+    img: 'cec.png',
+    url: 'http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=6557826',
+    title: 'Sample Efficiency Analysis of Neuroevolution Algorithms on a Quadruped Robot',
+    venue: 'CEC 2013',
+    authors: 'Shengbo Xu, Hirotaka Moriguchi, Shinichi Honiden',
+    me: 'Shengbo Xu',
+  },
+  {
+    img: 'seal.png',
+    url: 'http://link.springer.com/chapter/10.1007%2F978-3-642-34859-4_36',
+    title: 'Efficient Neuroevolution for a Quadruped Robot',
+    venue: 'SEAL 2012',
+    authors: 'Shengbo Xu, Hirotaka Moriguchi, Shinichi Honiden',
+    me: 'Shengbo Xu',
+  },
+];
+---
+<section class="publications" id="publications">
+  <div class="inner">
+    <span class="label">Publications</span>
+    <div class="list">
+      {pubs.map(p => (
+        <a class="card" href={p.url} target="_blank" rel="noopener">
+          <div class="thumb">
+            <img src={`${base}images/index/${p.img}`} alt={p.venue} loading="lazy" />
+          </div>
+          <div class="body">
+            <div class="title">{p.title}</div>
+            <div class="venue">{p.venue}</div>
+            <div class="authors">
+              {p.authors.split(', ').map((a, i) => (
+                <>
+                  {i > 0 && ', '}
+                  {a === p.me ? <strong>{a}</strong> : a}
+                </>
+              ))}
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .publications {
+    padding: 72px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .inner {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  .label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--accent-ink);
+    margin-bottom: 28px;
+  }
+  .list { display: flex; flex-direction: column; gap: 14px; }
+  .card {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 20px 22px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: transform .18s, box-shadow .18s, border-color .18s;
+  }
+  .card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-hov);
+    border-color: rgba(79,70,229,.3);
+  }
+  .thumb {
+    flex: 0 0 auto;
+    width: 110px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .thumb img {
+    max-width: 110px;
+    max-height: 70px;
+    width: auto;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+  }
+  .body { min-width: 0; }
+  .title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.45;
+    margin-bottom: 4px;
+  }
+  .venue {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--accent-ink);
+    margin-bottom: 4px;
+  }
+  .authors {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+  .authors strong { color: var(--ink-soft); font-weight: 700; }
+
+  @media (max-width: 640px) {
+    .card { flex-direction: column; align-items: flex-start; }
+    .thumb { width: 90px; height: auto; }
+  }
+</style>

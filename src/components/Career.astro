@@ -1,0 +1,123 @@
+---
+const base = import.meta.env.BASE_URL;
+
+const items = [
+  { img: 'xincere.png', name: 'Xincere, Inc.', role: '代表取締役', period: '2020 -', url: 'https://residence.xincere.jp/' },
+  { img: 'recruit.png', name: 'リクルート', role: 'HR Technology', period: '2019 - 2020', url: 'https://www.recruit.co.jp/' },
+  { img: 'indeed.png', name: 'Indeed Tokyo', role: 'Software Engineer', period: '2018 - 2019', url: 'https://jp.indeed.jobs/' },
+  { img: 'countir.png', name: 'Countir Inc.', role: 'CTO', period: '2018', url: 'https://countir.jp/' },
+  { img: 'lstyle.png', name: 'L-style', role: 'プロダーツプレイヤー', period: '2017 - 2019', url: 'http://l-style.info/' },
+  { img: 'medley.png', name: '株式会社メドレー', role: 'Software Engineer', period: '2015 - 2017', url: 'http://www.medley.jp/' },
+  { img: 'target.png', name: 'ターゲットスポーツ', role: 'プロダーツプレイヤー', period: '2014 -', url: 'https://top.target-darts.jp/players/39' },
+  { img: 'gree.png', name: 'グリー株式会社', role: 'Software Engineer', period: '2014 - 2015', url: 'http://corp.gree.net/jp/ja/' },
+  { img: 'computer.png', name: '東京大学大学院\n情報理工学系研究科', role: 'コンピュータ科学専攻', period: '2013 - 2014', url: 'http://www.honiden.nii.ac.jp/' },
+  { img: 'honiden.png', name: '本位田研究室', role: '機械学習・進化計算', period: '2012 - 2014', url: 'http://www.honiden.nii.ac.jp/' },
+  { img: 'todai.png', name: '東京大学理学部', role: '情報科学科', period: '2008 - 2012', url: 'http://www.u-tokyo.ac.jp/index_j.html' },
+  { img: 'kaisei.png', name: '開成高校', role: '', period: '2004 - 2007', url: 'https://kaiseigakuen.jp/' },
+];
+---
+<section class="career" id="career">
+  <div class="inner">
+    <span class="label">Career</span>
+    <div class="grid">
+      {items.map(item => (
+        <a class="card" href={item.url} target="_blank" rel="noopener">
+          <div class="logo-wrap">
+            <img src={`${base}images/index/${item.img}`} alt={item.name} loading="lazy" />
+          </div>
+          <div class="info">
+            <div class="org">{item.name}</div>
+            {item.role && <div class="role">{item.role}</div>}
+            <div class="period">{item.period}</div>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .career {
+    padding: 72px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .inner {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  .label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--accent-ink);
+    margin-bottom: 28px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    padding: 28px 16px 20px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    text-align: center;
+    transition: transform .18s, box-shadow .18s, border-color .18s;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hov);
+    border-color: rgba(79,70,229,.3);
+  }
+  .logo-wrap {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo-wrap img {
+    max-width: 140px;
+    max-height: 52px;
+    width: auto;
+    filter: grayscale(100%);
+    opacity: .72;
+    transition: filter .2s, opacity .2s;
+  }
+  .card:hover .logo-wrap img { filter: grayscale(0); opacity: 1; }
+  .info { width: 100%; }
+  .org {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.4;
+    white-space: pre-line;
+  }
+  .role {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 3px;
+    font-weight: 500;
+  }
+  .period {
+    font-size: 12px;
+    color: var(--accent-ink);
+    font-weight: 600;
+    margin-top: 4px;
+  }
+
+  @media (max-width: 720px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 400px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>

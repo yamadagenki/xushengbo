@@ -1,0 +1,50 @@
+---
+---
+<footer class="footer">
+  <div class="inner">
+    <span class="copy">&copy; {new Date().getFullYear()} Xu Shengbo / 徐 聖博</span>
+    <div class="links">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdJZNAJ6WvwIMHFMYFQjmW1mhgKrfmCuI_cBj_2lbiky3HjXw/viewform" target="_blank" rel="noopener">お問い合わせ</a>
+      <a href="https://www.facebook.com/xu.shengbo" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://twitter.com/yamadagenki0607" target="_blank" rel="noopener">X</a>
+      <a href="https://corp.xincere.jp/message" target="_blank" rel="noopener">Xincere</a>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: var(--ink);
+    padding: 40px 0;
+  }
+  .inner {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .copy {
+    font-size: 13px;
+    color: rgba(255,255,255,.45);
+  }
+  .links {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .links a {
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(255,255,255,.7);
+    transition: color .15s;
+  }
+  .links a:hover { color: #fff; }
+
+  @media (max-width: 640px) {
+    .inner { flex-direction: column; text-align: center; }
+  }
+</style>

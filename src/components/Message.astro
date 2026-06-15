@@ -1,0 +1,66 @@
+---
+---
+<section class="message" id="message">
+  <div class="inner">
+    <span class="label">Message</span>
+    <blockquote class="quote">
+      テクノロジーは、人を<em>置き換える</em>のではなく、<br />
+      人を<em>強くする</em>ために。
+    </blockquote>
+    <div class="body">
+      <p>
+        私たちが届けたいのは、効率化や自動化そのものではありません。人が判断や創造に集中できるよう、エンジニアリングを「人の力を強くする手段」として提供すること。それがシンシアの目指す価値創造です。
+      </p>
+      <p>
+        流行りのアーキテクチャよりも、現実のビジネスの中で持続的に機能する設計を。短期的なコスト削減よりも、長期的な価値創造を。AIについても、人の判断を代替するのではなく、人の判断を拡張する道具であるべきだと考えています。
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .message {
+    background: var(--bg-soft);
+    border-bottom: 1px solid var(--line);
+    padding: 72px 0;
+  }
+  .inner {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  .label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--accent-ink);
+    margin-bottom: 24px;
+  }
+  .quote {
+    margin: 0 0 32px;
+    font-size: clamp(22px, 3.5vw, 36px);
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: -.01em;
+    color: var(--ink);
+    border: none;
+    padding: 0;
+  }
+  .quote em {
+    font-style: normal;
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .body p {
+    max-width: 680px;
+    margin: 0 0 14px;
+    font-size: 16px;
+    color: var(--ink-soft);
+    line-height: 1.85;
+  }
+  .body p:last-child { margin-bottom: 0; }
+</style>

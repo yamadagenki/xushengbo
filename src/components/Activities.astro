@@ -1,0 +1,70 @@
+---
+const activities = [
+  { date: '2018/02', title: '簿記三級取得' },
+  { date: '2016/11', title: '宅地建物取引士試験合格' },
+  { date: '2016/11', title: 'つくばマラソン完走 (42.195km / 3時間58分)' },
+  { date: '2016/03', title: '三浦国際市民マラソン完走 (ハーフ)' },
+  { date: '2015/11', title: 'つくばマラソン完走 (42.195km)' },
+  { date: '2014/11', title: 'つくばマラソン完走 (42.195km)' },
+  { date: '2013/11', title: 'つくばマラソン完走 (42.195km)' },
+  { date: '2012/10', title: 'フライデーナイト・リレーマラソン 4位' },
+  { date: '2012/06', title: 'ジグソーパズル検定 1級取得' },
+  { date: '2011/09', title: 'ジグソーパズル検定 2級取得' },
+];
+---
+<section class="activities" id="activities">
+  <div class="inner">
+    <span class="label">Activities</span>
+    <ul class="list">
+      {activities.map(a => (
+        <li class="item">
+          <time class="date">{a.date}</time>
+          <span class="title">{a.title}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+<style>
+  .activities {
+    padding: 72px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .inner {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  .label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--accent-ink);
+    margin-bottom: 28px;
+  }
+  .list { list-style: none; }
+  .item {
+    display: flex;
+    align-items: baseline;
+    gap: 18px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--line);
+    transition: padding-left .18s;
+  }
+  .item:first-child { border-top: 1px solid var(--line); }
+  .item:hover { padding-left: 6px; }
+  .date {
+    flex-shrink: 0;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+  }
+  .title {
+    font-size: 15px;
+    color: var(--ink-soft);
+  }
+</style>
