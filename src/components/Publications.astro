@@ -1,5 +1,5 @@
 ---
-const base = import.meta.env.BASE_URL;
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 
 const pubs = [
   {
@@ -43,7 +43,7 @@ const pubs = [
       {pubs.map(p => (
         <a class="card" href={p.url} target="_blank" rel="noopener">
           <div class="thumb">
-            <img src={`${base}images/index/${p.img}`} alt={p.venue} loading="lazy" />
+            <img src={`${base}/images/index/${p.img}`} alt={p.venue} loading="lazy" />
           </div>
           <div class="body">
             <div class="title">{p.title}</div>

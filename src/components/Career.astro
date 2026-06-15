@@ -1,5 +1,5 @@
 ---
-const base = import.meta.env.BASE_URL;
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 
 const items = [
   { img: 'xincere.png', name: 'Xincere, Inc.', role: '代表取締役', period: '2020 -', url: 'https://residence.xincere.jp/' },
@@ -23,7 +23,7 @@ const items = [
       {items.map(item => (
         <a class="card" href={item.url} target="_blank" rel="noopener">
           <div class="logo-wrap">
-            <img src={`${base}images/index/${item.img}`} alt={item.name} loading="lazy" />
+            <img src={`${base}/images/index/${item.img}`} alt={item.name} loading="lazy" />
           </div>
           <div class="info">
             <div class="org">{item.name}</div>

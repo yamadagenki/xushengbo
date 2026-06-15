@@ -7,7 +7,7 @@ const {
   title = '徐 聖博 — 株式会社シンシア 代表取締役',
   description = '徐 聖博(Xu Shengbo)の個人サイト。株式会社シンシア 代表取締役。東京大学で機械学習・進化計算を研究し、グリー・メドレー・Indeed・リクルートを経て2020年にシンシアを創業。',
 } = Astro.props;
-const base = import.meta.env.BASE_URL;
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 ---
 <!doctype html>
 <html lang="ja">
@@ -15,7 +15,7 @@ const base = import.meta.env.BASE_URL;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
-    <link rel="icon" type="image/png" href={`${base}images/favicon.png`} />
+    <link rel="icon" type="image/png" href={`${base}/images/favicon.png`} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
