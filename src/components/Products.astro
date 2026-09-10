@@ -1,0 +1,140 @@
+---
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+
+const products = [
+  {
+    img: 'tanepo.jpg',
+    url: 'https://kids-typing.sideworks.life',
+    name: 'Tanepo (タネタイプ)',
+    tagline: '子ども向け英文タイピング練習サービス',
+    desc: '6〜12歳向けの、無料・登録不要の英文タイピング練習サイト。単語の意味を7言語で読み上げながら、英語で文章を打つ練習ができる。',
+    tags: ['Web', '個人開発', '運営中'],
+  },
+];
+---
+<section class="products" id="products">
+  <div class="inner">
+    <span class="label">Products</span>
+    <p class="lead">現在運営中のプロダクト一覧です。</p>
+    <div class="list">
+      {products.map(p => (
+        <a class="card" href={p.url} target="_blank" rel="noopener">
+          <div class="thumb">
+            <img src={`${base}/images/products/${p.img}`} alt={p.name} loading="lazy" />
+          </div>
+          <div class="body">
+            <div class="name">{p.name}</div>
+            <div class="tagline">{p.tagline}</div>
+            <p class="desc">{p.desc}</p>
+            <div class="tags">
+              {p.tags.map(t => <span class="tag">{t}</span>)}
+            </div>
+            <span class="link">サイトを見る →</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .products {
+    padding: 72px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .inner {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  .label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--accent-ink);
+    margin-bottom: 12px;
+  }
+  .lead {
+    font-size: 15px;
+    color: var(--muted);
+    margin-bottom: 28px;
+  }
+  .list {
+    display: grid;
+    gap: 20px;
+  }
+  .card {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 24px;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    overflow: hidden;
+    background: #fff;
+    transition: transform .18s, box-shadow .18s;
+  }
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0,0,0,.07);
+  }
+  .thumb {
+    background: #f4f6f8;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+  }
+  .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top left;
+    display: block;
+  }
+  .body {
+    padding: 22px 24px 22px 0;
+  }
+  .name {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--ink);
+    letter-spacing: -.02em;
+  }
+  .tagline {
+    margin-top: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--accent-ink);
+  }
+  .desc {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--ink-soft);
+  }
+  .tags {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .tag {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--muted);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 3px 10px;
+  }
+  .link {
+    display: inline-block;
+    margin-top: 16px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--accent-ink);
+  }
+  @media (max-width: 720px) {
+    .card { grid-template-columns: 1fr; gap: 0; }
+    .body { padding: 20px 20px 22px; }
+  }
+</style>
